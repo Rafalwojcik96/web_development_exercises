@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<title> Zegar </title>
+<script type="text/JavaScript">
+
+function odliczanie()
+{
+var dzisiaj = new Date();
+
+var day = dzisiaj.getDate();
+var month = dzisiaj.getMonth()+1;
+var year = dzisiaj.getFullYear();
+
+var hours = dzisiaj.getHours();
+if (hours <10) hours ="0"+hours ;
+
+var minutes = dzisiaj.getMinutes();
+if (minutes <10) minutes ="0"+minutes;
+
+var seconds = dzisiaj.getSeconds();
+if (seconds<10) seconds="0"+seconds;
+
+document.getElementById("zegar").innerHTML = 
+		day+"/"+month+"/"+year+" | "+hours+":"+minutes+":"+seconds;
+
+setTimeout("odliczanie()",1000);
+}
+</script>
+</head>
+
+<body onload="odliczanie();">
+<script>
+document.write("Aktualny czas");
+</script>
+
+<div id="zegar"></div>	
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<title>seriale_tabele</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Serwis prezentuje subiektywne top 5 seriali telewizyjnych.">
+	<meta name="kaywords" content="top 5, seriale, ocena, najlepsze">
+	<meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1"/>
+
+	<style>
+		h1,h2
+		{ 
+			color: white;
+		}			
+		
+	</style>
+
+</head>
+
+<body>
+
+	<table width="1000" align="center">
+		<tr>
+			<td colspan="3" align="center" bgcolor="black"><h1>Najlepsze seriale</h1></td>
+		</tr>
+		
+		<tr>
+			<td width="140" valign="top" bgcolor="lightgray">
+			Czarne lustro <br/>
+			Świat według Kiepskich<br/>
+			Świat według Bundych<br/>
+			Gambit Królowej<br/>
+			Wiedźmin<br/>
+			</td>
+			
+			<td width="680" valign="top">
+				<h3> Czarne lustro</h3>
+			W przyszłości ludzie mierzą się z problemami, których przysparzają im nowoczesne technologie i rozwój cywilizacji.
+			</td>
+			<td width="180"  bgcolor="lightgray" align="center">
+				<img src="slajd4.jpeg"  width="160" height="600">
+			</td>
+		</tr>
+	
+		<tr>
+			<td colspan="3" bgcolor="black" align="center"> 
+				<h2>Najlepsze seriale - TOP 5! &copy; Wszelkie prawa zastrzeżone.</h2>
+			</td>
+		</tr>
+	
+	</table>
+
+</body>
+</html>

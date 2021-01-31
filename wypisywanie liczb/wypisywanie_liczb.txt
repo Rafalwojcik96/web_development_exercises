@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html lang="pl">
+<head>
+<title>Wypisywanie liczb</title>
+    <meta charset="utf-8"/>
+<script type="text/javascript">
+
+function wypisz()
+	{
+	
+		var liczba1 = document.getElementById("pole1").value;
+		var liczba2 = document.getElementById("pole2").value;
+		var napis = "";
+	
+		if (liczba1>liczba2)
+		{
+		for (i=liczba2; i<=liczba1; i++)
+			{
+			
+			napis = napis + i + " ";
+		
+			}
+		document.getElementById("wynik").innerHTML=napis;
+		}
+		else if (liczba1<liczba2)
+		{
+		for (i=liczba1; i<=liczba2; i++)
+			{
+			napis = napis + i + " ";
+		
+			}
+		document.getElementById("wynik").innerHTML=napis;		
+		}
+		
+	}
+
+</script>
+</head>
+<body>
+
+<input type="text" id="pole1"/>
+<input type="text" id="pole2"/>
+<input type="submit" value="wypisz" onclick="wypisz()"/>
+
+<div id="wynik"></div>
+
+</body>
+</html>

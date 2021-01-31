@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Matematyka w JS</title>
+	
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+</head>
+
+<body>
+	
+	<script>
+		document.write(0.1 * 5); document.write("<br />");
+		document.write(0.15 * 3); document.write("<br />");
+		document.write(0.1 + 0.2); document.write("<br />");
+		document.write(Math.pow(2,53)); document.write("<br />");       // Największy int w JS
+		document.write(Math.pow(2,53)+1); document.write("<br />");   // Po dodaniu 1, liczba się nie zmienia.
+		document.write(Math.pow(2,53)+2); document.write("<br />");   // Poprawny wynik! Jednak nie możemy ustalić, że 2^53 nie jest największym intem ponieważ po nim, mogą występować błędy, jak w przypadku +1.
+		document.write(Math.pow(2,53)*2); document.write("<br /><br /><br />");    // Poprawny wynik poniewąż zmienia się wartość wykładnika, a nie wartość w mantysie
+		
+		document.write("Zaokrąglanie liczb:"); document.write("<br />");
+		document.write("Czy 0.1+0.2=0.3 ?"); document.write("<br />");
+		
+		if(0.1+0.2==0.3) document.write("true<br />");
+		else document.write("false<br />");
+		
+		var x;
+		x= Math.round((0.1+0.2)*10)/10;
+		document.write(x+"<br />");
+		
+		x= Math.round((0.15*3)*100)/100;
+		document.write(x+"<br />");
+		
+		x= 0.15 * 3;
+		x= x.toFixed(2); document.write(x+"<br /><br />");
+		
+		x = 1.005;
+		x= x.toFixed(2); document.write(x+" średnie<br />");
+		
+		x = 1.005;
+		x= Math.round(1.005*100)/100; document.write(x+" to też takie, o<br />");
+		
+		Number.prototype.round = function(miejsc)
+		{
+			return + (Math.round(this+"e+"+miejsc)+"e-"+miejsc);                       // e=exponent=wykładnik
+   		}																										    	    // e+ oznacza zwiększenie go
+		
+		
+		x = 1.005;
+		x = x.round(2);
+		document.write(x+" pięknie<br />");
+		
+		
+	</script>	
+
+</body>
+</html>

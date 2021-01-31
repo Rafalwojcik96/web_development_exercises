@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<title>seriale_div</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Serwis prezentuje subiektywne top 5 seriali telewizyjnych.">
+	<meta name="kaywords" content="top 5, seriale, ocena, najlepsze">
+	<meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1"/>
+	
+	<style>
+	#container
+	{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#logo
+	{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	}
+	
+	#nav
+	{
+		float: left;
+		background-color: lightgray;
+		width: 120px;
+		min-height: 580px;
+		padding: 10px;
+	}
+	
+	#content
+	{
+		float: left;
+		width: 640px;
+		padding: 20px;
+	}
+	
+	#ad
+	{
+		float: left;
+		background-color: lightgray;
+		width: 160px;
+		min-height: 600px
+		padding: 10px;
+	}
+	
+	#footer
+	{
+		clear: both;
+		background-color: black;
+		color: white;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<div id="logo">
+			<h1>Najlepsze seriale</h1>
+		</div>
+	
+		<div id="nav">
+			Czarne lustro <br/>
+			Świat według Kiepskich<br/>
+			Świat według Bundych<br/>
+			Gambit Królowej<br/>
+			Wiedźmin<br/>
+		</div>
+	
+		<div id="content">
+			<h2>Czarne lustro </h2>
+			W przyszłości ludzie mierzą się z problemami, których przysparzają im nowoczesne technologie i rozwój cywilizacji.
+		</div>
+		
+		<div id="ad">
+			<img src="slajd4.jpeg"  width="160" height="600">
+		</div>
+		
+		<div id="footer">
+			Najlepsze seriale - TOP 5! &copy; Wszelkie prawa zastrzeżone.
+		</div>
+	
+	</div>
+
+</body>
+</html>

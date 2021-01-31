@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Katalog samochodowy</title>
+	<meta name="description" content="Stwórz wymarzony model swojego samochodu!">
+	<meta name="keywords" content="samochód, katalog, salon, nowe auto">
+	<meta name="author" content="Rafał Wójcik">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+
+	<header>
+	
+		<h1>Rodzaje formularzy</h1>
+
+	</header>
+	
+	<main>
+	
+	<article>
+	<form action="afterClick" method="post" enctype="multipart/form-date">
+
+		<div class="row">
+				<fieldset>
+				<legend>Input typu radio</legend>
+				
+				<div><label><input type="radio" value="1" name="radio" checked>Kliknij aby zaznaczyć. </label></div>
+				
+				<div><label><input type="radio" value="2"  name="radio">Kliknij aby zaznaczyć. </label></div>
+				
+				<div><label><input type="radio" value="3"  name="radio">Kliknij aby zaznaczyć. </label></div>
+				
+				</fieldset>
+		</div>
+		
+		<div class="row">	
+				<label for="opcjeSelect">Opcje do wyboru</label>
+				<select id="opcjeSelect">
+					<option selected>Opcja 1</option>	
+					<option>Opcja 2</option>	
+					<option>Opcja 3</option>	
+				</select>
+		</div>
+		
+		<div class="row">	
+		
+			<fieldset>
+			<legend>Input typu checkbox </legend>
+			<div><label><input type="checkbox" disabled checked>Tej nie zmienisz ;)</label></div>
+			<div><label><input type="checkbox" checked>tak</label></div>
+			<div><label><input type="checkbox" >nie</label></div>
+			</fidlset>
+		</div>
+
+		<div class="row">	
+				<label for="fewPpcjeSelect">Opcje do wielokrotnego wyboru</label>
+				<select id="fewOpcjeSelect" multiple size="3">
+					<option>Opcja 1</option>	
+					<option>Opcja 2</option>	
+					<option>Opcja 3</option>	
+					<option>Opcja 4</option>	
+					<option>Opcja 5</option>	
+					<option>Opcja 6</option>	
+				</select>
+		</div>
+
+		<div class="row">					
+
+			<label>Imię<input type="text" placeholder="Jak masz na imię?"></label>
+			<label>Hasło<input type="password"></label>
+		</div>	
+		
+			<div class="row">
+					<label> Ile <input type="number" ></label>
+			<div>
+	
+		<div class="row">
+			<label> Adres e-mail <input type="email" name="adres" required></label>
+			<label> Numer telefonu <input type="tel" name="telefon" required></label>
+		</div>
+		
+		<div class="row">
+			<label> Data<input type="date" min="2021-01-01" max="2021-03-31" ></label>
+			<label> Numer telefonu <input type="time"></label>
+		</div>
+		
+		<div class="row">
+			<label><div>tekst</div><textarea id="tekst" rows="5" cols="44"></textarea></label>
+		<div>
+
+		<div class="row">
+			<label>prześlij plik<input type="file" ></label>
+		<div>
+		
+		<div class="row">
+			<label>podaj adres www<input type="url" ></label>
+		<div>
+	
+		<div class="row">
+			<label>wybierz color<input type="color"></label>
+		<div>
+	
+		
+		<div class="row">				
+			<input type="submit" value="Klik!">
+			<input type="button" value="klik!">
+			<button type="button">przycisk</button>
+		<div>	
+	
+
+	</form>		
+	</article>
+		
+	</main>
+
+</body>
+</html>
